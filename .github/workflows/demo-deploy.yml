@@ -1,0 +1,9 @@
+name: Demo deploy
+on:
+  workflow_dispatch:
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - run: echo "Deploiement de demonstration (preuve de collecte REVIEWIT)"
